@@ -1,19 +1,16 @@
-//Introduction in using typescript
-console.log("Hello! I am web web developer");
-//personal information
-var personame = "MIshal Nadeem";
-var age = 24;
-var education = ["indetermediate/in Science"];
-var skills = ["HTML", "CSS", "JAVASCRIPT", "PYTHON", "TYPESCRIPT"];
-var experience = "less than 6 months";
-var project = ["Hello world", "calculator", "BMI calculator", "45 assignment using Node Js and typescript"];
-//print personal information
-console.log("My name is ".concat(personame, ", and i am ").concat(age, " years old. "));
-console.log("I am a self - taught developer");
-console.log("I have skills in:");
-skills.forEach(function (skills) { return console.log("-" + skills); });
-console.log(" I have ".concat(experience, " experience in web development"));
-console.log("Som of my Project ");
-project.forEach(function (project) { return console.log("*" + project); });
-//conclusion
-console.log("Thank you for getting to know me as a web developer");
+"use strict";
+//IF ELSE STATEMENT USING ROCK PAPER SCISSORS GAME
+Object.defineProperty(exports, "__esModule", { value: true });
+let player1 = "rock";
+let player2 = "scissors";
+if (player1 === player2) {
+    console.log("its a tie");
+}
+else if ((player1 === "rock" && player2 === "scissors") ||
+    (player1 === "scissors" && player2 === "paper") ||
+    (player1 === "paper" && player2 === "rock")) {
+    console.log("player1 win this match");
+}
+else {
+    console.log("player2 win this match sucessfully");
+}
