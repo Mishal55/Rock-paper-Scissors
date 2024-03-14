@@ -1,26 +1,16 @@
-//Introduction in using typescript
+//IF ELSE STATEMENT USING ROCK PAPER SCISSORS GAME
 
-console.log("Hello! I am web web developer")
+let player1: string = "rock"
+let player2: string = "scissors"
 
-//personal information
-const personame: string = "MIshal Nadeem"
-const age: number = 24
-const education: string[] = ["indetermediate/in Science"]
-const skills: string[] = ["HTML", "CSS", "JAVASCRIPT", "PYTHON", "TYPESCRIPT"]
-const experience: string = "less than 6 months"
-const project: string[] = ["Hello world", "calculator", "BMI calculator", "45 assignment using Node Js and typescript"]
-
-//print personal information
-console.log(`My name is ${personame}, and i am ${age} years old. `)
-console.log(`I am a self - taught developer`)
-console.log("I have skills in:")
-skills.forEach(skills => console.log("-" + skills))
-console.log(` I have ${experience} experience in web development`)
-console.log("Som of my Project ")
-project.forEach(project => console.log("*" + project))
-
-//conclusion
-console.log("Thank you for getting to know me as a web developer")
-
+if( player1=== player2){
+    console.log("its a tie")
+}else if((player1 === "rock" && player2 === "scissors") ||
+( player1 ==="scissors" && player2 === "paper")||
+(player1 === "paper" && player2 === "rock")) {
+    console.log("player1 win this match")
+}else{
+    console.log("player2 win this match sucessfully")
+}
 
 
